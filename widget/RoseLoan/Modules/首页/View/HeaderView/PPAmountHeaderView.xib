@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PPAmountHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animatedPicture1" translatesAutoresizingMaskIntoConstraints="NO" id="d2b-lP-ce2">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="360"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Gu-0f-Rwm">
+                    <rect key="frame" x="85.5" y="315" width="204" height="45"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="204" id="dUu-aP-nW1">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="45" id="usB-FZ-rcM">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                    <state key="normal" title="我要借款">
+                        <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="wantToBorrow:" destination="iN0-l3-epB" eventType="touchUpInside" id="NeN-lv-432"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AboutUs" translatesAutoresizingMaskIntoConstraints="NO" id="3yB-QY-YXy">
+                    <rect key="frame" x="164.5" y="170" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="3uv-US-kTv">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                        <constraint firstAttribute="height" constant="50" id="Dm6-GS-3TH">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </constraint>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XuF-LQ-gue">
+                    <rect key="frame" x="164.5" y="170" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <action selector="clickProject:" destination="iN0-l3-epB" eventType="touchUpInside" id="mCh-Hz-Qr1"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="极速借款" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgx-15-epp">
+                    <rect key="frame" x="166.5" y="268" width="42" height="21"/>
+                    <color key="backgroundColor" red="1" green="0.45098039215686275" blue="0.25098039215686274" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="42" id="V7R-lv-Wch"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="玫瑰贷" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fU5-KF-Dlh">
+                    <rect key="frame" x="161.5" y="227" width="52" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fU5-KF-Dlh" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3xQ-gh-N3v"/>
+                <constraint firstItem="3yB-QY-YXy" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="15" id="4fk-1i-1wh">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="d2b-lP-ce2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="5UN-z5-biZ"/>
+                <constraint firstItem="fU5-KF-Dlh" firstAttribute="top" secondItem="3yB-QY-YXy" secondAttribute="bottom" constant="7" id="AQ7-f9-tUf"/>
+                <constraint firstItem="d2b-lP-ce2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BCh-2L-utS"/>
+                <constraint firstItem="XuF-LQ-gue" firstAttribute="bottom" secondItem="3yB-QY-YXy" secondAttribute="bottom" id="Jor-Kr-9OK"/>
+                <constraint firstItem="XuF-LQ-gue" firstAttribute="leading" secondItem="3yB-QY-YXy" secondAttribute="leading" id="OaX-of-UG0"/>
+                <constraint firstItem="3yB-QY-YXy" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="2" id="Ptb-2d-JtR">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="XuF-LQ-gue" firstAttribute="top" secondItem="3yB-QY-YXy" secondAttribute="top" id="S9q-Wb-zN1"/>
+                <constraint firstItem="7Gu-0f-Rwm" firstAttribute="top" secondItem="Wgx-15-epp" secondAttribute="bottom" constant="26" id="WZm-SV-a7B">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="adapterScreen" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="Wgx-15-epp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="YUJ-MF-aQM"/>
+                <constraint firstItem="7Gu-0f-Rwm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Zdw-qo-tim"/>
+                <constraint firstItem="7Gu-0f-Rwm" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="aDi-EJ-sZc"/>
+                <constraint firstItem="XuF-LQ-gue" firstAttribute="trailing" secondItem="3yB-QY-YXy" secondAttribute="trailing" id="f56-YT-Xqt"/>
+                <constraint firstItem="d2b-lP-ce2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="lkk-St-Neh"/>
+                <constraint firstItem="d2b-lP-ce2" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="oQt-fm-fzw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="applyBtn" destination="7Gu-0f-Rwm" id="KAk-Dd-5I7"/>
+                <outlet property="bgImgView" destination="d2b-lP-ce2" id="zhF-8m-cGP"/>
+                <outlet property="descWidth" destination="V7R-lv-Wch" id="kd8-O0-aI5"/>
+                <outlet property="descriptionLabel" destination="Wgx-15-epp" id="iXn-PA-C1w"/>
+                <outlet property="projectImg" destination="3yB-QY-YXy" id="Lrz-Nu-SdE"/>
+                <outlet property="titleLabel" destination="fU5-KF-Dlh" id="YdB-Kv-7vv"/>
+            </connections>
+            <point key="canvasLocation" x="-23.199999999999999" y="26.986506746626688"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AboutUs" width="60" height="60"/>
+        <image name="animatedPicture1" width="375" height="359.5"/>
+    </resources>
+</document>

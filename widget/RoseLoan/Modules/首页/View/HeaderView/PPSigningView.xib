@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PPSigningView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wZC-2A-eWI">
+                    <rect key="frame" x="8" y="10" width="359" height="98"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FI-tF-qFT">
+                    <rect key="frame" x="8" y="10" width="359" height="98"/>
+                    <connections>
+                        <action selector="toViewSigning:" destination="iN0-l3-epB" eventType="touchUpInside" id="w0Y-NZ-wN3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wZC-2A-eWI" secondAttribute="trailing" constant="8" id="0Mz-Jb-twK"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1FI-tF-qFT" secondAttribute="bottom" constant="10" id="1bZ-mz-adU"/>
+                <constraint firstItem="wZC-2A-eWI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="3M9-LE-1xh"/>
+                <constraint firstItem="1FI-tF-qFT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="8" id="EWz-1f-5kd"/>
+                <constraint firstItem="1FI-tF-qFT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="Lwe-ut-N4s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1FI-tF-qFT" secondAttribute="trailing" constant="8" id="fd0-pF-xfq"/>
+                <constraint firstAttribute="bottom" secondItem="wZC-2A-eWI" secondAttribute="bottom" constant="10" id="jvj-gL-Sbh"/>
+                <constraint firstItem="wZC-2A-eWI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="t5B-Bf-J0F"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="imageView" destination="wZC-2A-eWI" id="Kmh-rz-4ht"/>
+            </connections>
+            <point key="canvasLocation" x="133.59999999999999" y="-110.64467766116942"/>
+        </view>
+    </objects>
+</document>

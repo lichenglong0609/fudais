@@ -1,0 +1,29 @@
+# Uncomment this line to define a global platform for your project
+ platform :ios, '9.0'
+
+target 'RoseLoan' do
+  
+  pod 'YYModel'
+#  pod 'Bugly'
+#  pod 'FDFullscreenPopGesture'
+  pod 'AFNetworking'
+  pod 'Masonry'
+  pod 'SDWebImage', '4.2.3'
+  pod 'SVProgressHUD'
+  pod 'WebViewJavascriptBridge'
+#  pod 'UITableView+FDTemplateLayoutCell'
+#  pod 'JSONModel'
+  pod 'MJRefresh'
+#  pod 'FLEX'
+  pod 'YYText'
+#  pod 'FCUUID'
+  pod 'BGFMDB'
+#  pod 'UMengAnalytics-NO-IDFA'
+  pod 'GTMBase64'
+  pod 'SVProgressHUD'
+  pod 'SAMKeychain'
+  pod 'TYCyclePagerView'
+  pod 'iVersion'
+  pod 'MBProgressHUD'
+  pod 'JPush'
+end
